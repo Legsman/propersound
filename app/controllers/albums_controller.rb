@@ -9,8 +9,12 @@ class AlbumsController < ApplicationController
   end
 
   def create
-    Album.create(album_params)
-    redirect_to root_path
+    @album = Album.create(album_params)
+    if @album.valid?
+      redirect_to root_path
+    else
+      render :new, :status  => :unprocessable_entity
+    end
   end
 
   private
