@@ -128,11 +128,12 @@ nav ul a {
 }
 
 .row {
-  width: 100%;
   max-width: 940px;
   margin: 0 auto;
   position: relative;
   padding: 0 2%;
+  text-align: center;
+  width: 100%;
 }
 
 * {
@@ -162,11 +163,9 @@ p {
   margin-bottom: 20px;
   font-size: 17px;
   line-height: 2;
+  color: #2E2C2C;
 }
 
-.content {
-  padding: 50px 2% 250px;
-}
 
 .hero {
   position: relative;
@@ -191,6 +190,16 @@ p {
   border-bottom: 2px solid #e8f380;
   padding-bottom: 12px;
   line-height: 3;
+}
+
+.boxy{
+height: 390px; 
+border: 1px
+}
+
+
+.meow {
+  font-style: italic;
 }
 
 .mouse {

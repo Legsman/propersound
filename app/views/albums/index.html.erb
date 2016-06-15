@@ -1,7 +1,7 @@
-<% @albums.each do |album| %>
+<% @album.each do |album| %>
 <div> 
-  <h1><%= album.name %></h1><br />
-  <i><%= album.address %></i><br />
-  <p><%= album.description %></p><br />
+  <h1 class= "col-xs-12 col-sm-7 ">Album : <%=album.name%>
+  <h2 class = "col-xs-12 col-sm-7 meow"> Artist :<%= album.artist %></h2><br />
+  <p class= "col-xs-12 content"><%= album.description %></p><br />
   </div>
   <% end %>

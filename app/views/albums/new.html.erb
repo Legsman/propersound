@@ -1,1 +1,11 @@
+<div class="meow col-xs-10 col-xs-offset-1">
 <h1> Add your album here <h1>
+  <br />
+<%= simple_form_for @album do |f| %>
+    <%= f.input :name %>
+    <%= f.input :artist %>
+    <%= f.input :description, input_html: {rows: 9} %>
+    <br />
+    <%= f.submit 'Create' ,class: 'btn btn-primary'%>
+  <% end %>
+</div>
